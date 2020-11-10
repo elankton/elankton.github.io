@@ -1,0 +1,14 @@
+---
+layout: null
+---
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% assign dposts = site.posts[0].tags | reverse %}{% assign now = 'now' | date: '%s' %}{% assign diff = now | minus: 172800 %}
+<url>
+<loc>{{ site.hcurl | xml_escape }}</loc>
+<lastmod>{{ diff | date: '%Y-%m-%dT%H:%M:%SZ'}}</lastmod>
+</url>{% for post in dposts %}{% assign diff = diff | plus: 1800 %}
+<url>
+<loc>{{ site.hcurl | append:'?id=' | append: site.hcprefix | append: post | xml_escape }}</loc>
+<lastmod>{{ diff | date: '%Y-%m-%dT%H:%M:%SZ'}}</lastmod>
+</url>{% endfor %}
+</urlset>
