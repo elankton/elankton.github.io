@@ -1,0 +1,33 @@
+# Site settings
+title: "Elankton"
+author: "Ela"
+hcprefix: "pv-"
+hcurl: "https://elankton.github.io/"
+
+url: "http://localhost:4000"  # http://localhost:4000 /
+
+# verification
+bing: ""
+yandex: ""
+google: ""
+# encoding timezone
+encoding: "utf-8"
+timezone: UTC
+# Build settings
+baseurl: / # leave just a /
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /postlar/:slug
+sitemap_limit: 150.0
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Custom variables
+version: "1.1.0"
