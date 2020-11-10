@@ -9,7 +9,7 @@ url: "http://localhost:4000"  # http://localhost:4000 /
 # verification
 bing: ""
 yandex: ""
-google: ""
+google: "8w58q2d3C18q9pRu6EE2NKBpLPpTB0ud--kRzVLfMrc"
 # encoding timezone
 encoding: "utf-8"
 timezone: UTC
