@@ -1,0 +1,12 @@
+---
+layout: null
+---
+[
+    {
+      "title":"{{site.title}}",
+      "url":"{{site.hcurl}}",
+      "image":"{{site.hcurl}}favicon.ico",
+      "total_posts":"0",
+      "last_post_date":"2020-09-01T16:09:06+03:00"
+    } 
+]
