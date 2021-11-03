@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /search.html
-
-Sitemap: https://elankton.github.io/sitemap.xml
+Disallow: /jquery.js
