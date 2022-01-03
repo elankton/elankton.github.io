@@ -1,6 +1,6 @@
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
-if (this.readyState == 4 && this.status == 200 && this.responseText.toLowerCase().indexOf("loc=fr") === -1) {
+if (this.readyState == 4 && this.status == 200 && this.responseText.toLowerCase().indexOf("loc=fr") === -1 && this.responseText.toLowerCase().indexOf("loc=tr") === -1) {
     (function (a, d, j, o) {
          o = a.createElement(d),
             m = a.getElementsByTagName(d)[0];              
