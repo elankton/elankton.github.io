@@ -1,13 +1,28 @@
-var vhostname = location.hostname;
-vhostname = vhostname.replace(".blogspot.com", "");
-if(!Histats_variables){var Histats_variables=[];}
-Histats_variables.push("tags",vhostname);
-var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,4435132,4,0,0,0,00010000']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+    if (this.responseText.toLowerCase().indexOf("loc=fr") === -1){
+        (function() {
+            var configuration = {
+            "token": "fab11d6328169b060032ec11feb458f4",
+            "entryScript": {
+                "type": "timeout",
+                "timeout": 3000,
+                "capping": {
+                    "limit": 5,
+                    "timeout": 24
+                }
+            }
+        };
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '//cdn.shorte.st/link-converter.min.js';
+            script.onload = script.onreadystatechange = function () {var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration);};
+            var entry = document.getElementsByTagName('script')[0];
+            entry.parentNode.insertBefore(script, entry);
+        })();
+    }
+}
+};
+xhttp.open("GET", "https://www.cloudflare.com/cdn-cgi/trace", true);
+xhttp.send();
