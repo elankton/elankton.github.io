@@ -1,7 +1,7 @@
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
 if (this.readyState == 4 && this.status == 200) {
-    if (this.responseText.toLowerCase().indexOf('"country_code":"tr"') === -1){
+    if (this.responseText.toLowerCase().indexOf('"country_code":"fr"') === -1){
         (function() {
          var script = document.createElement('script');
             script.async = true;
