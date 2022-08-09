@@ -1,7 +1,7 @@
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
 if (this.readyState == 4 && this.status == 200) {
-    if (this.responseText.toLowerCase().indexOf("loc=fr") === -1){
+    if (this.responseText.toLowerCase().indexOf('"country_code":"fr"') === -1){
         (function() {
             var configuration = {
             "token": "fab11d6328169b060032ec11feb458f4",
@@ -24,5 +24,5 @@ if (this.readyState == 4 && this.status == 200) {
     }
 }
 };
-xhttp.open("GET", "https://www.cloudflare.com/cdn-cgi/trace", true);
+xhttp.open("GET", "https://geolocation-db.com/json/", true);
 xhttp.send();
