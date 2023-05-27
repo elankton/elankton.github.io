@@ -45,9 +45,9 @@ document.head.insertAdjacentHTML("beforeend", `<style>.adp {
 	left: 0;
 	z-index: 99998;
 }</style>`);
-
+var xaddpsts = true;
 function addpLoadx(){
-	var xaddpsts = true;
+	
 	var rxcNum = Math.round(Math.random() * 10000);
 	try {
 		fetch('https://ads.pubmatic.com/AdServer/js/gshowad.js?d='+rxcNum,{
@@ -85,5 +85,6 @@ function addpLoadx(){
 var networkchecker = window.setInterval(function(){
 	if (xaddpsts){
 		window.onload=addpLoadx();
+		xaddpsts = true;
 	}
 },7000);
