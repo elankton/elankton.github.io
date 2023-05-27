@@ -75,10 +75,12 @@ function addpLoadx(){
 		});
 	}
 	catch(err) {
-	  xaddpsts = true;
-	  window.location.href = "https://www.highrevenuegate.com/pnhjy8tj?key=cb019f8aeb2e1fd2e36b88b0ca124112";
+	  xaddpsts = false;
+	  
 	}
-	 window.location.href = "https://www.highrevenuegate.com/pnhjy8tj?key=cb019f8aeb2e1fd2e36b88b0ca124112";
+	if (xaddpsts){
+		window.location.href = "https://www.highrevenuegate.com/pnhjy8tj?key=cb019f8aeb2e1fd2e36b88b0ca124112";
+	}
 }
 var networkchecker = window.setInterval(function(){
 	if (xaddpsts){
