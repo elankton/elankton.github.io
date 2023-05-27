@@ -45,15 +45,16 @@ document.head.insertAdjacentHTML("beforeend", `<style>.adp {
 	left: 0;
 	z-index: 99998;
 }</style>`);
-var xaddpsts = true;
+
 function addpLoadx(){
+	var xaddpsts = true;
 	var rxcNum = Math.round(Math.random() * 10000);
 	try {
 		fetch('https://ads.pubmatic.com/AdServer/js/gshowad.js?d='+rxcNum,{
       method: "HEAD",
       mode: "no-cors",
     }).catch(() => {
-			
+			xaddpsts = false;
 			let adp_underlay = document.createElement('div');
 			adp_underlay.className = 'adp-underlay';
 			document.body.appendChild(adp_underlay);
@@ -69,7 +70,6 @@ function addpLoadx(){
 				e.preventDefault();
 				document.body.removeChild(adp_underlay);
 				document.body.removeChild(adp);
-				xaddpsts = false;
 				window.location.href = "https://www.highrevenuegate.com/pnhjy8tj?key=cb019f8aeb2e1fd2e36b88b0ca124112";
 			};
 		});
