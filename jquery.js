@@ -1,9 +1,16 @@
-var xl = document.getElementById("top_header_addone");
-xl.id = "adsyed";
-xl = document.getElementById("sidebar_add");
-xl.id = "adsucyuz";
-xl = document.getElementById("center_middle_add");
-xl.id = "ads";
+var xl = "";
+if(document.getElementById("top_header_addone")){
+	var xl = document.getElementById("top_header_addone");
+	xl.id = "adsyed";
+}
+if(document.getElementById("sidebar_add")){
+	xl = document.getElementById("sidebar_add");
+	xl.id = "adsucyuz";
+}
+if(document.getElementById("center_middle_add")){
+	xl = document.getElementById("center_middle_add");
+	xl.id = "ads";
+}
 
 
 function sleep(ms) {
@@ -51,6 +58,21 @@ async function Tutor() {
 		script.type = 'text/javascript';
 		script.src = 'https://www.highperformanceformat.com/a458d2acccabadb0ad769a3f1eb6a238/invoke.js';
 		var el = document.getElementById("a458d2acc");
+		el.appendChild(script);
+	}
+	await sleep(3000);
+	if(document.getElementById("sidebar_add")){
+		var xl = document.getElementById("sidebar_add");
+		xl.id = "adsucyuz";
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.text = "atOptions = {'key' : '4af9baae14a71c16d7c9c5b12bb59fdb','format' : 'iframe','height' : 250,'width' : 300,'params' : {} 	};";
+		var el = document.getElementById("adsucyuz");
+		el.appendChild(script);
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = 'https://www.highperformanceformat.com/4af9baae14a71c16d7c9c5b12bb59fdb/invoke.js';
+		var el = document.getElementById("adsucyuz");
 		el.appendChild(script);
 	}
 }
