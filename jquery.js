@@ -23,7 +23,8 @@ async function Tutor() {
 		script.type = 'text/javascript';
 		script.text = "atOptions = {'key' : '04ab7bf8059140f2e892fdc85a5bb04d','format' : 'iframe','height' : 90,'width' : 728,'params' : {} 	};";
 		var el = document.getElementById("adsyed");
-		el.innerHTML =(script);
+		el.innerHTML = "";
+		el.appendChild(script);
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
 		script.src = 'https://www.highperformanceformat.com/04ab7bf8059140f2e892fdc85a5bb04d/invoke.js';
@@ -36,7 +37,8 @@ async function Tutor() {
 		script.type = 'text/javascript';
 		script.text = "atOptions = {'key' : '4af9baae14a71c16d7c9c5b12bb59fdb','format' : 'iframe','height' : 250,'width' : 300,'params' : {} 	};";
 		var el = document.getElementById("adsucyuz");
-		el.innerHTML =(script);
+		el.innerHTML = "";
+		el.appendChild(script);
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
 		script.src = 'https://www.highperformanceformat.com/4af9baae14a71c16d7c9c5b12bb59fdb/invoke.js';
@@ -48,7 +50,8 @@ async function Tutor() {
 		var script = document.createElement('center');
 		script.id = 'a458d2acc';
 		var el = document.getElementById("ads");
-		el.innerHTML =(script);
+		el.innerHTML = "";
+		el.appendChild(script);
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
 		script.text = "atOptions = {'key' : 'a458d2acccabadb0ad769a3f1eb6a238','format' : 'iframe','height' : 60,'width' : 468,'params' : {} 	};";
@@ -68,7 +71,8 @@ async function Tutor() {
 		script.type = 'text/javascript';
 		script.text = "atOptions = {'key' : '4af9baae14a71c16d7c9c5b12bb59fdb','format' : 'iframe','height' : 250,'width' : 300,'params' : {} 	};";
 		var el = document.getElementById("adsucyuz");
-		el.innerHTML =(script);
+		el.innerHTML = "";
+		el.appendChild(script);
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
 		script.src = 'https://www.highperformanceformat.com/4af9baae14a71c16d7c9c5b12bb59fdb/invoke.js';
